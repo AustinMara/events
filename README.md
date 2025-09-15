@@ -53,3 +53,10 @@ A code container is the same thing but less delicious!
 hint~
 
 ---
+
+---
+## Game Events
+
+We can press the button pretty fast but lets make it automatic so we don't have to do so much.<br>
+
+We are going to use a **Game Event**

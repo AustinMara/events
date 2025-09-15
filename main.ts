@@ -1,9 +1,10 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    scene.cameraShake(4, 500)
+    codey.startEffect(effects.coolRadial, 500)
 })
+let codey: Sprite = null
 scene.setBackgroundColor(15)
 effects.starField.startScreenEffect()
-let codey = sprites.create(img`
+codey = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . f f f f f f . . f f f f f f . 
     . f 6 6 6 6 6 f f 6 6 6 6 6 f . 
@@ -21,3 +22,6 @@ let codey = sprites.create(img`
     . . . . f f f f f f f f . . . . 
     . . . . . 2 4 . . 4 2 . . . . . 
     `, SpriteKind.Player)
+game.onUpdate(function () {
+    scene.cameraShake(8, 500)
+})
