@@ -1,26 +1,39 @@
- 
 
+# EVENTS! @showdialog 
+### @explicitHints true
+In this lesson we are learning about **events**!
 
-> Open this page at [https://austinmara.github.io/events/](https://austinmara.github.io/events/)
+Codey what are events?
 
-## Use as Extension
+🤖: Events are what you use to make things happen.
 
-This repository can be added as an **extension** in MakeCode.
+```template
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
+scene.setBackgroundColor(15)
+effects.starField.startScreenEffect()
+let codey = sprites.create(assets.image`codey`, SpriteKind.Player)
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/austinmara/events** and import
+```
 
-## Edit this project
+---
 
-To edit this repository in MakeCode.
+## Button Events
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/austinmara/events** and click import
+If you look to the right you'll see Codey floating peacefully in space. Let's ruin his moment!
 
-#### Metadata (used for search, rendering)
+We can see an empty ``||variables(controller):on [A] button [pressed] ||`` container in the workspace. <br>
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+Let's see what happens when we add a ``||scene: camera shake by [4] pixels for [500] ms ||`` to the container. 
+
+~hint What is a container?
+
+---
+
+🤖: A container is something you put stuff in! <br> 
+For example: last night I put my leftover Codey's Classic Oil and Metal Shaving Tacos&copy; in a container so I could have leftovers today! <br>
+A code container is the same thing but less delicious!
+hint~
+
+---
